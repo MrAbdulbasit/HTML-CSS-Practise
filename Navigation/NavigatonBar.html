@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Simple Horizontal Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ccc;
+        }
+
+        .nav ul {
+            list-style: none;
+            background-color: #444;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        .nav li {
+            font-size: 1.2em;
+            border-bottom: 1px solid #888;
+            width: 120px;
+            height: 50px;
+            line-height: 50px;
+            display: inline-block;
+            margin-right: -4px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            transition: .3s background-color;
+        }
+
+        .nav a:hover {
+            background-color: deepskyblue;
+        }
+
+        .nav a.active {
+            background-color: deepskyblue;
+            color: #444;
+            cursor: default;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="#">Tutorials</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</header>
+</body>
+</html>
